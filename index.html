@@ -1,0 +1,105 @@
+<!DOCTYPE html>                    
+<html lang="en">                   
+<head>                             
+    <meta charset="UTF-8">          
+    <!-- Tells browser: this is HTML5 -->
+    <!-- Root element; lang="en" = English -->
+    <!-- Metadata section — not shown on screen -->
+    <!-- Supports all standard characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile scaling -->
+    <meta name="description" content="SamFan Prints — The best place for Offical Sam Faraone merch!"> <!-- Search engine snippet -->
+    <title>SamFan Prints | Store home</title> <!-- Browser tab text -->
+    <link rel="stylesheet" href="css/global.css"> <!-- Shared styles for all pages -->
+    <link rel="stylesheet" href="css/index.css">  <!-- Extra styles for this page only -->
+</head>
+<body>  <!-- Everything visible on screen lives here -->
+    <!-- HEADER: logo + navigation — same on every page -->
+    <header class="site-header">               
+        <a class="logo" href="index.html">        
+            <img src="img/samfanlogo.png" alt="SamFan Prints logo"> <!-- alt text for 
+            accessibility -->
+            <span>SamFan Prints</span>             
+        </a>
+        <label class="menu-button" for="menu-toggle">
+            <img src="img/samfanlogo.png" alt="" aria-hidden="true">
+            <span>Menu</span>
+        </label>
+        <nav aria-label="Primary">  <!-- nav groups navigation links; aria-label names             
+        it -->
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Prints</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <!-- Semantic header element; sticky top bar -->
+    <!-- Logo is a link back to home -->
+    <!-- Brand name text beside logo -->
+    <!-- MOBILE MENU TOGGLE: shown on mobile only; desktop/tablet keep the normal navigation 
+    visible -->
+    <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Toggle navigation 
+    menu">
+    <!-- nav groups navigation links; aria-label names 
+    <a class="active" href="index.html">Home</a>     
+    <a href="products.html">Sets</a>
+    <a href="checkout.html">Checkout</a>
+    <a href="contact.html">Contact</a>
+    <!-- MAIN: the page's unique content -->
+    <!-- class="active" = current page -->
+     
+    <main>  <!-- Only one <main> per page; screen readers jump to it -->
+    <!-- HERO: big welcome message + feature image -->
+        <section class="hero">  <!-- class="hero" applies the two-column grid layout -->
+            <div class="card-title">                 
+                <!-- div groups the text so it sits in the left column -->
+                <br>
+                <br>
+                <h1>The best place for Sam Faraone fans</h1>  <!-- One h1 per page -->
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p>Welcome to <strong style="color:var(--accent)">SamFan Prints</strong> 
+                </p>  <!-- <strong> makes text bold and signals importance -->
+                <br>
+                <br>
+            </div>
+            <img src="img/samfanlogo.png" alt="100% OFF!!!"> <!-- Right-column 
+            image -->
+        </section>
+        <!-- SERVICES: three feature cards -->
+
+        <section>
+            <h2>What We Do</h2>  <!-- h2 = section heading -->
+            <div class="card-grid">                   
+                <!-- Three-column card layout -->
+                <article class="card">   <!-- article = self-contained content (a card) -->
+                    <h3>High quality</h3>  <!-- h3 = card heading -->
+                    <p>The highest quality Sam Faraone prints on the market!</p>
+                </article>
+                <article class="card">
+                    <h3>Signed Prints</h3>
+                    <p>Signed Prints by Sam himself.</p>
+                    </article>
+                    <article class="card">
+                    <h3>Free and Fast Shipping</h3>
+                    <p>Fully 100% FREE shipping on all products.</p>
+                </article>
+            </div>
+            <p class="note">   <!-- class="note" applies the yellow-bordered info box from index.css -->
+            Image licensing note: all images are from existing project assets
+            for educational use in this assessment only.
+            </p>
+        </section>
+    </main>
+    <!-- FOOTER: site info at the bottom of every page -->
+    <footer>
+        <p>&copy; 2026 SamFan Prints &mdash; Sam Faraone offical merch store</p>  <!-- &copy; = © 
+        symbol -->
+        <p>Sam Faraone has given full permession for the useage of his face for profit and marketing.
+        </p>
+    </footer>
+</body>
+</html>

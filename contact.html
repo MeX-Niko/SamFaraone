@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact The SamFan Managers for any inquires.">
+    <title>SamFan Prints | Contact</title>
+    <link rel="stylesheet" href="css/global.css">   <!-- Shared styles (includes form styles) -->
+    <link rel="stylesheet" href="css/contact.css">  <!-- Contact-page-only styles -->
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            <img src="img/samfanlogo.png" alt="SamFan Prints logo">
+            <span>SamFan Prints</span>
+        </a>
+        <!-- MOBILE MENU TOGGLE: shown on mobile only; desktop/tablet keep the normal navigation 
+        visible -->
+        <label class="menu-button" for="menu-toggle">
+            <img src="img/icon.png" alt="" aria-hidden="true">
+            <span>Menu</span>
+        </label>
+        <nav aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Prints</a>
+            <a href="checkout.html">Checkout</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card-title">
+            <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Toggle navigation 
+            menu">
+            <a class="active" href="contact.html">Contact</a>  <!-- Active = current page -->
+            <!-- CONTACT INTRO -->
+            <h1>Sam Faraone</h1>
+            <p>Anything out of stock? Shipping issue? Other inquires?</p>
+            <p class="contact-details">  <!-- Styled by contact.css: monospace font, yellow -->
+            Email: support@SamFanPrints.example &nbsp;|&nbsp; Phone: 1300 555 789
+            <!-- &nbsp; = non-breaking space; keeps the | separator from touching the text -->
+            </p>
+        </section>
+        <!-- CONTACT FORM -->
+        <section>
+            <form action="#" method="post">
+                <!-- action="#" = no server connected; method="post" = data sent in request body -->
+                <fieldset>  <!-- Groups related fields with a visible border -->
+                    <legend>Open a Email</legend>  <!-- Title shown on fieldset border -->
+                        <div class="form-grid">  <!-- Two-column grid layout -->
+                            <div class="field-group">  <!-- Stack label above input -->
+                                <label for="contact_name">Your Name</label>  <!-- for= links to input id= -->
+                                <input type="text" id="contact_name" name="contact_name"
+                                placeholder="e.g. Alex Yosafidis" required>
+                                <!-- type="text" = plain text box; required = can't submit if empty -->
+                            </div>
+
+                            <div class="field-group">
+                                <label for="contact_email">Your Email</label>
+                                <input type="email" id="contact_email" name="contact_email"
+                                placeholder="you@charliehouston.com" required>
+                                <!-- type="email" validates the address format automatically -->
+                            </div>
+
+                            <div class="field-group full">  <!-- class="full" = span both columns -->
+                                <label for="contact_message">Your Message</label>
+                                <textarea id="contact_message" name="contact_message"
+                                placeholder="e.g. Will Sam be doing a meet and greet at Comic Con?" required></textarea>
+                                <!-- textarea = multi-line text box; no self-closing tag -->
+                            </div>
+                        </div>
+                        
+                        <div class="actions">  <!-- Flexbox row for buttons -->
+                            <button type="submit">Send delivery boy Chaise Van Nes</button>  <!-- Submits the form -->
+                            <button type="reset">Clear message</button>         
+                        </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+        <footer>
+            <!-- Clears all fields -->
+            <p>&copy; 2026 SamFan Prints &mdash; Sam Faraone offical merch store</p>
+            <p>Sam Faraone has given permission of the use of himself for advertisement for merchendice.</p>
+        </footer>
+</body>
+</html>
